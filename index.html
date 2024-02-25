@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjib</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-V/H1v5c+k5axNekAsuQnTPEEqFRdEn4q+2gPOZEK1uqy2srZlNbfm7quqdj4dPp8" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico"" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">S.Maity</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="https://sanjib-m.netlify.app/#about" target="_blank">About</a></li>
+            <li><a href="https://sanjib-m.netlify.app/#work" target="_blank">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>    
+    </header>
+
+    <section>
+        <img src="image/stars.png" id="stars">
+        <img src="image/moon.png" id="moon">
+        <img src="image/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Black Rose</h2>
+        <a href="https://sanjib-m.netlify.app/" target="_blank" id="btn">Explore</a>
+        <img src="image/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Sanjib, a 15-year-old wunderkind from India,<br>
+            is currently navigating the corridors of academia while simultaneously delving into the intricate <br>
+            worlds of frontend development, backend mastery, web design, and the enchanting domain of Godot game<br>
+            development. Fueled by an insatiable passion for crafting digital experiences that transcend conventional <br>
+            boundaries, Sanjib welcomes challenges as stepping stones to greater innovation and expertise<br>
+            . In his realm, each line of code is a stroke of artistic brilliance, and every project is a testament <br>
+            to his boundless creativity and unwavering dedication to the craft. Step into the extraordinary universe <br>
+            of Sanjib's imagination and innovation, where the only limit is the expanse of his dreams. Welcome to a world <br>
+            where technology and creativity intertwine seamlessly, under the guidance of a young visionary whose potential<br>
+            knows no bounds.<br>
+            As a junior programmer, I possess a diverse skill set that encompasses a<br>
+            wide array of technologies and tools essential for modern development. With proficiency in<br>
+            languages such as HTML5, CSS3, JavaScript, and Python, I lay the foundation for dynamic and <br>
+            interactive web applications. Leveraging frameworks like React, Flask, and Express,<br>
+            I streamline development processes, ensuring efficient and scalable solutions.<br>
+            <br>
+            In the realm of mobile app development, I harness the power of Flutter and React Native to create cross-platform experiences that resonate with users across devices. My expertise extends to backend development with Node.js, where I leverage frameworks like Express to build robust and scalable server-side applications. I'm well-versed in database management systems such as MongoDB, utilizing it alongside technologies like Firebase to store and manage data securely.<br>
+            <br>
+            For data analysis and machine learning tasks, I employ libraries like Pandas, TensorFlow, and OpenCV to extract insights and derive meaningful conclusions from large datasets. My proficiency in version control systems like Git ensures seamless collaboration and effective management of project repositories.<br>
+            <br>
+            Beyond coding, I utilize design tools like Figma and Photoshop to create visually stunning interfaces that enhance user experience. With Postman, I streamline API development and testing processes, ensuring reliability and performance.<br>
+            <br>
+            In summary, as a junior programmer, I bring a versatile skill set encompassing frontend and backend development, mobile app development, data analysis, design, and project management. With a passion for learning and a commitment to excellence, I'm poised to tackle challenges and contribute effectively to any development team.<br>
+        </p>
+        
+    </div>
+    <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header')
+     window.addEventListener('scroll', function(){
+         let value = window.scrollY;
+         stars.style.left = value * 0.25 + 'px';
+         moon.style.top = value * 1.05 + 'px';
+         mountains_behind.style.top = value * 0.5+ 'px';
+         mountains_front.style.top = value * 0+ 'px';
+         text.style.marginRight = value * 4+ 'px';
+         text.style.marginTop = value * 1.5+ 'px';
+         btn.style.marginTop = value * 1.5+ 'px';
+         header.style.top = value * 0.5+ 'px';
+     });
+    </script>
+
+<!-- Contact Section -->
+<div id='contact' class="flex justify-center my-5 items-center" style="background:#1c0522; backdrop-filter: blur(10px);">
+    <div class="max-w-md mx-auto bg-gray-800 p-8 rounded-xl text-white shadow-lg glow-border">
+
+        <p class="text-lg mb-4" style="white-space: nowrap;">Rich People Can Pay Me UPI Id--maitymillion@fam</p>
+        <h1 class="text-4xl sm:text-5xl mb-4">Contact <span>Me</span></h1>
+        <p class="text-lg mb-4">Let's connect on LinkedIn or send me an Email</p>
+        <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <div class="ml-4 text-md tracking-wide w-40">
+                <p>Sanjib Maity</p>
+            </div>
+            <!-- GitHub Icon SVG -->
+            <a href="https://github.com/Jr-Programer-Sanjib" target="_blank">
+            <!-- GitHub Icon SVG -->
+<svg class="w-8 h-8 text-gray-500 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <!-- Replace 'currentColor' with 'white' to set the fill color to white -->
+    <path fill="white" fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.801 8.208 11.385.6.111.823-.257.823-.574 0-.284-.01-1.034-.015-2.025-3.338.724-4.042-1.547-4.042-1.547-.546-1.385-1.333-1.753-1.333-1.753-1.089-.744.083-.729.083-.729 1.204.086 1.839 1.236 1.839 1.236 1.07 1.834 2.809 1.304 3.494.998.108-.772.417-1.303.76-1.604-2.665-.301-5.466-1.332-5.466-5.93 0-1.314.471-2.385 1.235-3.227-.124-.303-.536-1.526.117-3.178 0 0 1.008-.322 3.3 1.232a11.542 11.542 0 013.025-.405c1.026.003 2.06.138 3.025.405 2.29-1.554 3.296-1.232 3.296-1.232.656 1.652.244 2.875.12 3.178.767.842 1.234 1.913 1.234 3.227 0 4.61-2.804 5.624-5.477 5.917.429.371.814 1.102.814 2.22 0 1.604-.015 2.895-.015 3.287 0 .318.218.688.828.572C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
+</svg>
+
+        </a>
+        </div>
+        <form action="https://getform.io/f/vbmKD0eY" method="post" class="grid grid-cols-1 gap-4">
+            <input type="name" name="name" id="name" placeholder="Full Name" class="p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"/>
+            <input type="email" name="email" id="email" placeholder="Email" class="p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"/>
+            <textarea name="message" id="message" placeholder="Your Message" class="p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"></textarea>
+            <button type="submit" class="bg-green-500 text-white py-3 px-6 rounded-lg">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+   
+
+</body>
+</html>
