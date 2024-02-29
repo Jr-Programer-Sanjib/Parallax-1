@@ -8,9 +8,6 @@
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
 }
-body::-webkit-scrollbar {
-    display: none;
-}
 
 body
 {
